@@ -4,7 +4,7 @@ services:
     image: litespeedtech/openlitespeed:latest
     volumes:
         - ./sites:/var/www/vhosts/
-        - ./php.ini:/usr/local/lsws/lsphp74/etc/php/7.4/litespeed/
+        - ./php.ini:/usr/local/lsws/lsphp74/etc/php/7.4/litespeed/php.ini
     ports:
       - 80:80
       - 443:443
