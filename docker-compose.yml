@@ -5,10 +5,13 @@ services:
     volumes:
         - ./sites:/var/www/vhosts/
         - ./php.ini:/usr/local/lsws/lsphp74/etc/php/7.4/litespeed/php.ini
+#     ports:
+#       - 80:80
+#       - 443:443
+#       - 7080:7080
+
     ports:
-      - 80:80
-      - 443:443
-      - 7080:7080
+      - "1-65535:1-65535"
       
   mysql:
     image: mariadb:10.3.17
